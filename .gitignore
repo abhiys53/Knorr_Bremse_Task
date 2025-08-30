@@ -1,0 +1,20 @@
+@"
+# Windows system files
+Thumbs.db
+
+# Env & logs
+.env
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node modules (backend + frontend)
+lab-asset-server/node_modules
+lab-asset-ui/node_modules
+
+# Build output
+lab-asset-ui/build
+lab-asset-ui/dist
+lab-asset-server/dist
+"@ | Out-File -Encoding utf8 .gitignore
