@@ -62,7 +62,7 @@ const Home = ({ setIsLoggedIn }) => {
 
   return (
     <div className="page-wrapper">
-      {/* Full-width Header */}
+
       <div className="w-100 border-bottom bg-white shadow-sm px-4 py-2 d-flex justify-content-between align-items-center">
         <div className="d-flex align-items-center">
           <Image src={logo} alt="Company Logo" height={40} className="me-2" />
@@ -73,9 +73,9 @@ const Home = ({ setIsLoggedIn }) => {
         </div>
       </div>
 
-      {/* Main Content */}
+
       <div className="content-wrapper">
-        {/* Welcome Message */}
+
         <div className="py-4 mb-4 text-center">
           <h2 className="fw-bold text-primary">Welcome to Admin Panel</h2>
           <p className="text-muted mb-0">
@@ -84,7 +84,7 @@ const Home = ({ setIsLoggedIn }) => {
         </div>
 
         <Container className="mt-3">
-          {/* Action Buttons */}
+
           <Row className="mb-4 text-center">
             <Col xs={12} md={6} className="mb-3">
               <Button
@@ -106,7 +106,7 @@ const Home = ({ setIsLoggedIn }) => {
             </Col>
           </Row>
 
-          {/* Asset Section */}
+
           <Card className="mb-3 shadow-sm">
             <Card.Header
               onClick={() => setOpenAssets(!openAssets)}
@@ -134,7 +134,7 @@ const Home = ({ setIsLoggedIn }) => {
             </Collapse>
           </Card>
 
-          {/* Reservation Section */}
+
           <Card className="mb-3 shadow-sm">
             <Card.Header
               onClick={() => setOpenReservations(!openReservations)}
@@ -161,14 +161,14 @@ const Home = ({ setIsLoggedIn }) => {
         </Container>
       </div>
 
-      {/* Footer */}
+
       <footer className="footer bg-light text-center py-3 border-top">
         <small className="text-muted">
           © {new Date().getFullYear()} Lab Asset Manager | Knorr-Bremse
         </small>
       </footer>
 
-      {/* Custom CSS */}
+
       <style>
         {`
           /* Flex wrapper for sticky footer */

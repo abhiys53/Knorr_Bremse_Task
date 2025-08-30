@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Table, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import { PencilSquare, Trash } from "react-bootstrap-icons"; // ✅ import icons
+import { PencilSquare, Trash } from "react-bootstrap-icons";
 import axiosInstance from "../../services/axiosInstance";
-import NotificationModal from "../NotificationModal"; // ✅ import modal
+import NotificationModal from "../NotificationModal";
 
 const AssetList = ({ assets, onDeleteSuccess }) => {
   const navigate = useNavigate();
 
-  // ✅ Modal state
+
   const [modalShow, setModalShow] = useState(false);
   const [modalTitle, setModalTitle] = useState("");
   const [modalMessage, setModalMessage] = useState("");
@@ -56,14 +56,14 @@ const AssetList = ({ assets, onDeleteSuccess }) => {
                     navigate(`/edit-asset/${asset.id}`, { state: { asset } })
                   }
                 >
-                  <PencilSquare size={16} /> {/* ✅ pencil icon */}
+                  <PencilSquare size={16} />
                 </Button>
                 <Button
                   variant="danger"
                   size="sm"
                   onClick={() => handleDelete(asset.id)}
                 >
-                  <Trash size={16} /> {/* ✅ trash icon */}
+                  <Trash size={16} />
                 </Button>
               </td>
             </tr>
@@ -71,7 +71,7 @@ const AssetList = ({ assets, onDeleteSuccess }) => {
         </tbody>
       </Table>
 
-      {/* ✅ Notification modal */}
+
       <NotificationModal
         show={modalShow}
         onHide={() => setModalShow(false)}

@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken");
 const { JWT_SECRET } = require("../config/config");
 
-// __define-ocg__ authentication middleware
+// authentication middleware
 module.exports = function (req, res, next) {
   const authHeader = req.headers["authorization"];
   if (!authHeader) {

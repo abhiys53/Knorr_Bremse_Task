@@ -18,9 +18,9 @@ axiosInstance.interceptors.response.use(
     // Only handle 401 if token exists
     if (err.response?.status === 401 && localStorage.getItem("token")) {
       localStorage.removeItem("token");
-      // Optionally update state in App.js via callback instead of reload
+
     }
-    return Promise.reject(err); // still let catch handle error
+    return Promise.reject(err);
   }
 );
 

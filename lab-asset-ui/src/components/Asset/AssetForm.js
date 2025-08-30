@@ -63,9 +63,9 @@ const AssetForm = ({ onSuccess, editingAsset, clearEditing, cancelHandler }) => 
         className="d-flex flex-column flex-grow-1"
         style={{ height: "100%" }}
       >
-        {/* Form fields grow to fill available space */}
+
         <div className="flex-grow-1">
-          {/* Name Field */}
+
           <Form.Group className="mb-3">
             <Form.Label>Name</Form.Label>
             <InputGroup>
@@ -82,7 +82,7 @@ const AssetForm = ({ onSuccess, editingAsset, clearEditing, cancelHandler }) => 
             </InputGroup>
           </Form.Group>
 
-          {/* IP Field */}
+
           <Form.Group className="mb-3">
             <Form.Label>IP Address</Form.Label>
             <InputGroup>
@@ -99,7 +99,7 @@ const AssetForm = ({ onSuccess, editingAsset, clearEditing, cancelHandler }) => 
             </InputGroup>
           </Form.Group>
 
-          {/* Description Field */}
+
           <Form.Group className="mb-3 flex-grow-1">
             <Form.Label>Description</Form.Label>
             <InputGroup>
@@ -117,7 +117,7 @@ const AssetForm = ({ onSuccess, editingAsset, clearEditing, cancelHandler }) => 
           </Form.Group>
         </div>
 
-        {/* Buttons fixed at bottom */}
+
         <div className="d-flex justify-content-center mt-auto">
           <Button type="submit" variant={id ? "warning" : "primary"}>
             {id ? "Update" : "Add"}

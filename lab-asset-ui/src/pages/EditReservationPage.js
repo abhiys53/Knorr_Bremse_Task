@@ -48,18 +48,17 @@ const EditReservationPage = () => {
 
   return (
     <div className="page-wrapper">
-      {/* Header */}
+
       <div className="w-100 border-bottom bg-white shadow-sm px-4 py-2 d-flex align-items-center">
         <Image src={logo} alt="Company Logo" height={40} className="me-2" />
         <span className="fw-bold fs-5">| Lab Asset Manager</span>
       </div>
 
-      {/* Page Title */}
       <div className="text-center mt-4">
         <h2 className="fw-bold">Edit Reservation</h2>
       </div>
 
-      {/* Main Content */}
+
       <div className="content-wrapper">
         <Container className="my-4">
           <Card className="shadow-sm" style={{ minHeight: "70vh", display: "flex", flexDirection: "column" }}>
@@ -73,7 +72,7 @@ const EditReservationPage = () => {
             </Card.Body>
           </Card>
 
-          {/* Success Modal */}
+
           <Modal show={modalShow} onHide={handleModalClose} centered>
             <Modal.Header closeButton>
               <Modal.Title>Notification</Modal.Title>
@@ -88,7 +87,7 @@ const EditReservationPage = () => {
         </Container>
       </div>
 
-      {/* Footer */}
+
       <footer className="footer bg-light text-center py-3 border-top">
         <small className="text-muted">
           © {new Date().getFullYear()} Lab Asset Manager | Knorr-Bremse

@@ -50,7 +50,7 @@ function SignIn({ setIsLoggedIn }) {
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Header */}
+
       <Row className="p-3 shadow-sm bg-light">
         <Col className="d-flex align-items-center">
           <img
@@ -62,7 +62,7 @@ function SignIn({ setIsLoggedIn }) {
         </Col>
       </Row>
 
-      {/* Centered Form */}
+
       <Row className="flex-grow-1 d-flex justify-content-center align-items-center">
         <Col md={5} lg={4}>
           <Card className="p-4 shadow-lg border-0 bg-white bg-opacity-75">
@@ -113,7 +113,7 @@ function SignIn({ setIsLoggedIn }) {
         </Col>
       </Row>
 
-      {/* Modal */}
+
       <Modal show={modalShow} onHide={handleModalClose} centered>
         <Modal.Header closeButton>
           <Modal.Title>Error</Modal.Title>

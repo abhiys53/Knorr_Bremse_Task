@@ -32,7 +32,6 @@ function App() {
           }
         />
 
-        {/* Asset routes */}
         <Route
           path="/add-asset"
           element={
@@ -50,7 +49,7 @@ function App() {
           }
         />
 
-        {/* Reservation routes */}
+
         <Route
           path="/add-reservation"
           element={

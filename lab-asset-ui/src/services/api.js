@@ -4,7 +4,7 @@ const API = axios.create({
   baseURL: "http://localhost:5000", // backend URL
 });
 
-// Optional: handle 401 globally for auth calls (signIn/signUp)
+// handle 401 globally for auth calls (signIn/signUp)
 API.interceptors.response.use(
   (res) => res,
   (err) => {

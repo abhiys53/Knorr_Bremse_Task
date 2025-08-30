@@ -72,7 +72,7 @@ const ReservationForm = ({ assets, onSuccess, editingReservation, clearEditing, 
         style={{ height: "100%" }}
       >
         <div className="flex-grow-1">
-          {/* Asset Selection */}
+
           <Form.Group className="mb-3">
             <Form.Label>Select Asset</Form.Label>
             <InputGroup>
@@ -94,7 +94,7 @@ const ReservationForm = ({ assets, onSuccess, editingReservation, clearEditing, 
             </InputGroup>
           </Form.Group>
 
-          {/* User Name */}
+
           <Form.Group className="mb-3">
             <Form.Label>User Name</Form.Label>
             <InputGroup>
@@ -111,7 +111,7 @@ const ReservationForm = ({ assets, onSuccess, editingReservation, clearEditing, 
             </InputGroup>
           </Form.Group>
 
-          {/* Start Time */}
+
           <Form.Group className="mb-3">
             <Form.Label>Start Time</Form.Label>
             <InputGroup>
@@ -127,7 +127,7 @@ const ReservationForm = ({ assets, onSuccess, editingReservation, clearEditing, 
             </InputGroup>
           </Form.Group>
 
-          {/* End Time */}
+
           <Form.Group className="mb-3">
             <Form.Label>End Time</Form.Label>
             <InputGroup>
@@ -143,7 +143,7 @@ const ReservationForm = ({ assets, onSuccess, editingReservation, clearEditing, 
             </InputGroup>
           </Form.Group>
 
-          {/* Note */}
+
           <Form.Group className="mb-3 flex-grow-1">
             <Form.Label>Note</Form.Label>
             <InputGroup>
@@ -161,7 +161,7 @@ const ReservationForm = ({ assets, onSuccess, editingReservation, clearEditing, 
           </Form.Group>
         </div>
 
-        {/* Buttons at bottom */}
+
         <div className="d-flex justify-content-center mt-auto">
           <Button type="submit" variant={id ? "warning" : "success"}>
             {id ? "Update" : "Add"}

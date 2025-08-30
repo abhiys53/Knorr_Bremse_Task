@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Table, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import { PencilSquare, Trash } from "react-bootstrap-icons"; // ✅ icons
+import { PencilSquare, Trash } from "react-bootstrap-icons";
 import axiosInstance from "../../services/axiosInstance";
-import NotificationModal from "../NotificationModal"; // ✅ import reusable modal
+import NotificationModal from "../NotificationModal";
 
 const ReservationList = ({ reservations, onDeleteSuccess }) => {
   const navigate = useNavigate();
 
-  // ✅ Modal state
+
   const [modalShow, setModalShow] = useState(false);
   const [modalTitle, setModalTitle] = useState("");
   const [modalMessage, setModalMessage] = useState("");
@@ -63,14 +63,14 @@ const ReservationList = ({ reservations, onDeleteSuccess }) => {
                     })
                   }
                 >
-                  <PencilSquare size={16} /> {/* ✅ pencil icon */}
+                  <PencilSquare size={16} />
                 </Button>
                 <Button
                   variant="danger"
                   size="sm"
                   onClick={() => handleDelete(res.id)}
                 >
-                  <Trash size={16} /> {/* ✅ trash icon */}
+                  <Trash size={16} />
                 </Button>
               </td>
             </tr>
@@ -78,7 +78,7 @@ const ReservationList = ({ reservations, onDeleteSuccess }) => {
         </tbody>
       </Table>
 
-      {/* ✅ Notification Modal */}
+
       <NotificationModal
         show={modalShow}
         onHide={() => setModalShow(false)}
